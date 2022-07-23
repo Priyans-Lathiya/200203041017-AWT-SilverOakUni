@@ -1,0 +1,40 @@
+﻿<html>
+	<head>
+		<title>Demo Background Video</title>
+		<style type="text/css">
+				.fullscreen_bg 
+				{
+					position:fixed;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					overflow:hidden;
+					z-index:-1;
+					background-size:cover;
+				}
+
+				.fullscreen_bg_video 
+				{
+					position:fixed;
+					width: auto;
+					height: auto;
+					min-width: 100%;
+					min-height: 100%;
+				}
+				h2{background-color:antiquewhite;color:firebrick;}
+		</style>
+    </head>
+    <body>
+        
+		<div class="fullscreen_bg">
+            <video src="videos.mp4" autoplay loop muted class="fullscreen_bg_video"></video>
+        </div>
+		
+		<h2>Greetings from the Student of silver oak university!</h2>
+		<h2>sem-5</h2>
+		<h2>Branch-computer engineering</h2>
+		<h2>divison-A</h2>
+		<h2>subject-AWT</h2>
+    </body>
+</html>

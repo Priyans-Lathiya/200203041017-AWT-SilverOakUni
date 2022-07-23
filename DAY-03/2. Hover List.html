@@ -1,0 +1,104 @@
+<!-- Write a Program to make a nested list using order list and unordered list in HTML -->
+<html>
+
+<head>
+    <title>Lists</title>
+    <style type="text/css">
+        body {
+            font-size: large;
+            background-color: antiquewhite;
+        }
+
+        #MainUL li ul li {
+            display: none;
+            color: firebrick
+        }
+
+        #MainUL li:hover ul li {
+            display: block;
+        }
+
+        /* #MainUL li:hover ul li ul li {
+            display: none;
+        }
+
+        #MainUL li ul li:hover ul li {
+            display: block
+        } */
+
+        #MainUL li:hover {
+            color: blueviolet
+        }
+
+        #MainOL li ol li {
+            display: none;
+            color: firebrick
+        }
+
+        #MainOL li:hover ol li {
+            display: block;
+        }
+
+        /* #MainOL li:hover ol li ol li {
+            display: none;
+        }
+
+        #MainOL li ol li:hover ol li {
+            display: block
+        } */
+
+        #MainOL li:hover {
+            color: blueviolet
+        }
+    </style>
+</head>
+
+<body>
+    <p1><b>Unordered list</b></p1>
+    <ul id="MainUL">
+        <li>Necessary Goods
+            <ul>
+                <li>Milk</li>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Juice</li>
+            </ul>
+        </li>
+        <li>Vegetables
+            <ul>
+                <li>Potato</li>
+                <li>Lady's Finger</li>
+                <li>Bitter Gourd</li>
+            </ul>
+        </li>
+        <li>Fruits
+            <ul>
+                <li>Apples</li>
+                <li>Orange</li>
+                <li>Banana</li>
+            </ul>
+        </li>
+    </ul>
+    <hr />
+    <p1><b>Ordered list</b></p1>
+    <ol id="MainOL">
+        <li>Computer Languages
+            <ol type="1">
+                <li>1. HTML</li>
+                <li>2. CSS</li>
+                <li>3. Javascript</li>
+                <li>4. Jquery</li>
+            </ol>
+        </li>
+        <li>Vocal Languages
+            <ol>
+                <li>1. English</li>
+                <li>2. Hindi</li>
+                <li>3. Gujarati</li>
+                <li>4. Marathi</li>
+            </ol>
+        </li>
+    </ol>
+</body>
+
+</html>
